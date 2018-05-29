@@ -48,7 +48,7 @@ class FeedbackHandler(BaseHandler):
     async def post(self, *args, **kwargs):
         try:
             with open("feedback.txt", "a") as f:
-                text = "Имя: {0}\nПол: {1}\nОтзыв: {2}\n\n".format(self.get_argument("name"),
+                text = "<b>Имя:</b> {0}<br><b>Пол:</b> {1}<br><b>Отзыв:</b> {2}<br><br>".format(self.get_argument("name"),
                                                                       self.get_argument("gender"),
                                                                       self.get_argument("feedback"))
                 f.write(text)
@@ -56,6 +56,10 @@ class FeedbackHandler(BaseHandler):
             pass
         print()
         self.redirect("/")
+    
+    async def get(self):
+        with open("feedback.txt", "rb") as f:
+            self.write(f.read())
 
 
 class AboutHandler(BaseHandler):
