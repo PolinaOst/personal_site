@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% module Template("bootstrap-css.html") %}
+    <title>Title</title>
+</head>
+<body>
+    {% module Template("nav-panel.html") %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <h1>Контакты</h1>
+                <div class="content">
+                    <span>Телефон: 89296164155</span><br>
+                    <span>Адрес: Москва, пр.Вернадского 37, 119415</span><br>
+                    <span>Социальные сети:</span><br>
+                    <ul>
+                        <li><a href="https://vk.com/mynameis_polly">Vkontakte</a></li>
+                        <li><a href="https://facebook.com/polina.ostanina.7">Facebook</a></li>
+                        <li><a href="https://instagram.com/mynameis_polly">Instagram</a></li>
+                        <li><a href="https://twitter.com/mynameis_polly">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br><br><br><br><br>
+            <br><br><br><br>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <h3>Оставить отзыв:</h3>
+                <form action="/feedback" method="post">
+                    <span>Введите имя:</span><br>
+                    <input type="text" name="name" id="name"><br>
+                    <span>Выберите пол:</span><br>
+                    <input type="radio" name="gender" id="gender_m">М</input><br>
+                    <input type="radio" name="gender" id="gender_f">Ж</input><br>
+                    <span>Ваш отзыв:</span><br>
+                    <input type="text" name="feedback" id="feedback"><br><br>
+                    <input type="submit" content="Отправить">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    {% module Template("footer.html") %}
+    {% module Template("bootstrap-js.html") %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% module Template("bootstrap-css.html") %}
+    <title>Title</title>
+</head>
+<body>
+    {% module Template("nav-panel.html") %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <h1>Интересы</h1>
+                <h3>Творчество:</h3>
+                <p>
+                    В счастливые доуниверситетские годы я была разносторонней творческой личностью.
+                    Регулярно выступала с вокальными и танцевальными номерами.
+                    Но от счастливого детства остались только походы в театр... c'est tout.
+                </p>
+                <h3>Спорт:</h3>
+                <p>
+                    Теперь я занимаюсь <a href="http://mrsss.nagradion.ru/profile/281155">Спортивнй гимнастикой</a> в составе ЦС МГУ.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <img id="polly" src={{ static_url("sportbuchlo.jpg") }} alt="">
+            </div>
+        </div>
+    </main>
+
+    {% module Template("footer.html") %}
+    {% module Template("bootstrap-js.html") %}
+</body>
+</html>

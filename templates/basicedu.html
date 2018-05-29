@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% module Template("bootstrap-css.html") %}
+    <title>Title</title>
+</head>
+<body>
+    {% module Template("nav-panel.html") %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <h1>Среднее образование</h1>
+                <br>
+                <p>Г. Сургут, <a href="http://lic1.admsurgut.ru/">Лицей 1</a>.</p><br>
+                <p>Г. Тюмень, <a href="http://school7-tmn.ru/">МБОУ СОШ №7</a></p>
+            </div>
+        </div>
+    </main>
+
+    {% module Template("footer.html") %}
+    {% module Template("bootstrap-js.html") %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% module Template("bootstrap-css.html") %}
+    <title>Title</title>
+</head>
+<body>
+    {% module Template("nav-panel.html") %}
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <h1>Высшее образование</h1>
+                <p>
+                    Московский государственный <a href="http://msu.ru">университет</a> им. М.В. Ломоносова, <a
+                        href="http://tipl.philol.msu.ru/">отделение теоритической и прикладной линглистики</a>,
+                    3 курс, бакалавриат.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    {% module Template("footer.html") %}
+    {% module Template("bootstrap-js.html") %}
+</body>
+</html>
